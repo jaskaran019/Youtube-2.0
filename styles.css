@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;700;800&display=swap');
+:root {
+    --light-mode: rgb(115, 0, 0);
+    --dark-mode: rgb(13, 19, 21);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-mode);
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    position: fixed;
+    width: 180px;
+    height: 100%;
+    /* border: 1px solid green; */
+}
+
+.left_top {
+    height: 100px;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-left-bars {
+    position: relative;
+    top: -5px;
+    left: -25%;
+}
+
+.left_body {
+    height: calc(100% - 100px);
+    width: 100%;
+    z-index: 1;
+    /* border: 2px solid white; */
+}
+
+.left_container {
+    height: 33.33%;
+    width: 100%;
+    z-index: 1;
+    /* border: 1px solid gray; */
+}
+
+.nav-text>a {
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 5%;
+    font-size: medium;
+}
+
+.nav-text>a:hover {
+    color: red;
+}
+
+.nav-text {
+    margin-bottom: 15%;
+    margin-top: 5%;
+}
+
+.nav-section>hr {
+    color: gray;
+    width: 90%;
+}
+
+.right {
+    height: 800px;
+    width: calc(98% - 180px);
+    margin-left: 180px;
+    /* border: 2px solid white; */
+}
+
+.nav {
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    z-index: 3;
+    /* border-bottom: 1px solid gray; */
+    height: 90px;
+    width: 100%;
+    background-color: var(--dark-mode);
+}
+
+.right-body {
+    /* border: 2px solid red; */
+    height: 100%;
+    margin-top: 90px;
+}
+
+.logo>#ytlogo {
+    width: 45px;
+}
+
+.logo>#yt_text {
+    width: 100px;
+}
+
+.searchbox {
+    width: 700px;
+    border: 2px solid white;
+    border-radius: 40px;
+    height: 45px;
+    background-color: var(--dark-mode);
+    margin-left: 100px;
+    padding-left: 22px;
+}
+
+.search {
+    width: 94%;
+    height: 45px;
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    padding-bottom: 5px;
+}
+
+.fa-search {
+    color: white;
+    cursor: pointer;
+}
+
+.mic {
+    height: 45px;
+    width: 45px;
+    border-radius: 100px;
+    background-color: transparent;
+    border: 2px solid white;
+    margin-left: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mic:hover {
+    border: 2px solid red;
+}
+
+.fa-microphone {
+    color: white;
+    cursor: pointer;
+    margin-left: 14px;
+}
+
+.user {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15%;
+    /* border: 2px solid white; */
+}
+
+.fa-solid {
+    color: white;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.fa-solid:hover {
+    color: red;
+}
+
+.userimg {
+    border: 2px solid white;
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    cursor: pointer;
+}
+
+.userimg:hover {
+    border: 2px solid red;
+}
+
+#user_profile {
+    height: 80px;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 140px;
+    /* border-bottom: 1px solid gray; */
+}
+
+.category {
+    height: 120px;
+    width: 110px;
+    background-color: rgb(22, 31, 34);
+    border: 1px solid rgb(22, 31, 34);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.category:hover {
+    transition: 0.75s;
+    transform: scale(105%);
+}
+
+.category_item {
+    margin-left: 35px;
+    background: -webkit-linear-gradient(75deg, rgb(115, 42, 99), rgb(93, 32, 199));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h4 {
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.tab {
+    width: 80%;
+    height: 20px;
+    background-color: rgb(172, 170, 170);
+    border: 1px solid rgb(172, 170, 170);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.row_title {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    /* border: 2px solid white; */
+}
+
+.container {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box {
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+}
+
+.video {
+    display: flex;
+    height: 200px;
+    width: 320px;
+    /* background-image: url("images/as it was.jpg");
+    background-size: auto 200px; */
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.duration {
+    display: flex;
+    background-color: rgb(241, 240, 240);
+    height: 25px;
+    width: 65px;
+    align-self: flex-end;
+    margin-left: auto;
+    border-radius: 10px 0px 10px 0px;
+    position: absolute;
+    left: 79.8%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.duration>h4 {
+    align-self: center;
+    color: black;
+    position: absolute;
+    right: 30%;
+    bottom: 10%;
+}
+
+.duration>#_4hr {
+    left: 3%;
+}
+
+.video>img {
+    height: 200px;
+    width: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    justify-content: flex-start;
+    align-content: center;
+    /* border: 2px solid white; */
+}
+
+.photo {
+    background-color: gray;
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    cursor: pointer;
+}
+
+.photo>img {
+    height: 70px;
+}
+
+.video_title {
+    margin-left: 10px;
+    color: white;
+}
+
+.video_details {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* border: 2px solid white; */
+    color: white;
+}
+
+.artist {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 11px;
+}
+
+.artist>h6 {
+    color: rgb(170, 167, 167);
+}
+
+.video_bars {
+    color: gray;
+    margin-left: auto;
+    margin-right: -1px;
+}
